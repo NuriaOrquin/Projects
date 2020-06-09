@@ -93,6 +93,10 @@ h6{
 	text-align: left;
 }
 
+.imagend{
+	width: 40px;
+}
+
 /*Utilidades*/
 
 
@@ -178,6 +182,10 @@ h6{
 
 .center{
 	margin: auto;
+}
+
+.margin{
+	margin: 2rem;
 }
 
 /*Imagen fondo fixed*/
@@ -378,6 +386,7 @@ h6{
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 2rem;
+	justify-content: space-around;
 }
 
 @media (min-width:768px) {
@@ -389,6 +398,7 @@ h6{
 		height: auto;
 		border-radius: 0px 10px 10px 0px;
 		margin-bottom: 2rem;
+		justify-content: space-around;
 	}
 }
 
@@ -583,11 +593,23 @@ fieldset{
 }
 
 .footer{
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000;
 }
 
-@media (min-width:768px) {
-	.footer{
+.navegacion2{
+	display: flex;
+	justify-content: flex-end;
+	align-items: left;
+	align-items: center;
+	padding-top: 1rem;
+	weight: 100%;
+}
 
-	}
+.navegacion2 a, p{
+color: #ffffff;
+text-decoration: none;
+font-size: 1.3rem;
 }
