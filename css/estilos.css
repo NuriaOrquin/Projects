@@ -20,36 +20,98 @@ img{
 }
 
 .contenedor{
+	width: 90%;
 	max-width: 120rem;
 	margin: 0 auto; /*Para centrar el contenedor*/
 }
 
 h1{
-	font-size: 4.5rem;
+	font-size: 3.1rem;
+}
+
+@media (min-width:768px) {
+	h1{
+		font-size: 3.5rem;
+	}
 }
 
 h2{
-	font-size: 4.1rem;
+	font-size: 2.7rem;
+}
+
+@media (min-width:768px) {
+	h2{
+		font-size: 3.1rem;
+	}
 }
 
 h3{
-	font-size: 3.7rem;
+	font-size: 2.3rem;
+}
+
+@media (min-width:768px) {
+	h3{
+		font-size: 2.7rem;
+	}
 }
 
 h4{
-	font-size: 3.3rem;
-}
-
-h5{
 	font-size: 2rem;
 }
 
+@media (min-width:768px) {
+	h4{
+		font-size: 2.3rem;
+	}
+}
+
+h5{
+	font-size: 1.7rem;
+}
+
+@media (min-width:768px) {
+	h5{
+		font-size: 2rem;
+	}
+}
+
+h6{
+	font-size: 1.3rem;
+}
+
+@media (min-width:768px) {
+	h6{
+		font-size: 1.7rem;
+	}
+}
+
+.bordedato{
+	border-left: 1px;
+	border-left-style: solid;
+	border-color: white;
+	padding-left: 2rem;
+	text-align: left;
+}
 
 /*Utilidades*/
+
 
 .seccion{
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.seccion{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .fw-300{
@@ -146,40 +208,66 @@ h5{
 	color: rgb(255, 255, 255);
 	padding-top:30rem;
 	max-width: 60rem;
-	font-size: 3.5rem;
 	line-height: 1.2;
 	margin: 0rem 2rem;
 }
 
 .barra{
 	display: flex;
-	justify-content: space-between;
-	align-items: left; /*Para alinear al centro*/
-	flex-direction: row-reverse;
+	justify-content: center;
 	background-color: rgb(0, 0, 0, .5);
 	margin: 0;
 	height: 6rem;
 	width: 100%;
 }
 
+@media (min-width:768px) {
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: left; /*Para alinear al centro*/
+		flex-direction: row-reverse;
+		background-color: rgb(0, 0, 0, .5);
+		margin: 0;
+		height: 6rem;
+		width: 100%;
+	}
+}
+
 /*Navegacion*/
 
 .navegacion{
 	display: flex;
-	justify-content: flex-end;
-	align-items: left;
+	justify-content: center;
 	align-items: center;
 	padding-top: 1.2rem;
-	weight: 100%;
 }
 
-.navegacion a{ /*Puse a por que tengo que poner que hijos quiero que se le apliquen las cosas dentro de la clase*/
-	color: #ffffff; /*El ultimo valor es la transparencia*/
-	text-decoration: none; /*elimina la linea del enlace*/
-	font-size: 2rem;
-/*	margin-left: 2rem;*/
-	margin: 10px 25px;
+@media (min-width:768px) {
+	.navegacion{
+		display: flex;
+		justify-content: flex-end;
+		align-items: left;
+		align-items: center;
+		padding-top: 1.2rem;
+		weight: 100%;
+	}
+}
 
+.navegacion a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+@media (min-width:768px) {
+	.navegacion a{
+		color: #ffffff; /*El ultimo valor es la transparencia*/
+		text-decoration: none; /*elimina la linea del enlace*/
+		font-size: 2rem;
+	/*	margin-left: 2rem;*/
+		margin: 10px 25px;
+	}
 }
 
 .navegacion a:hover {
@@ -211,7 +299,6 @@ h5{
 
 .icono h3{
 	text-transform: uppercase; /*Cambiar a mayusculas, capitalize para la primer letra sola en mayus*/
-	font-size: 3rem;
 	margin-top: 2rem;
 }
 
@@ -220,9 +307,7 @@ h5{
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
-.conocenos h4{
-	font-size: 2rem;
-}
+
 
 .iconos-caracteristicas{
 	list-style: none; /*Elimina las vinetas*/
@@ -237,11 +322,19 @@ h5{
 
 .fondoproductos{
 	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/*Horarios*/
+.carousel{
+	border: solid 10px;
+	border-color: white;
+	border-radius: 15px;
+	max-width: 90%;
+}
 
-/*DIv afuera*/
+/*DIv afuera contacto*/
 .fondo-contacto-afuera{
 	display: flex;
 	justify-content: center;
@@ -250,7 +343,26 @@ h5{
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: 65rem;
+	height: 100%;
+}
+
+/*Div afuera contacto2*/
+.contacto2{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+@media (min-width:768px) {
+	.contacto2{
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		height: 100%;
+	}
 }
 
 /*Divs adentro*/
@@ -259,10 +371,25 @@ h5{
 	display: flex;
 	background: white;
 	background-size: cover;
-	width: 25%;
-	height: 80%;
-	overflow: scroll;
-	border-radius: 0px 10px 10px 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px 10px 10px 10px;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+	.mail{
+		display: flex;
+		background: white;
+		background-size: cover;
+		width: 30%;
+		height: auto;
+		border-radius: 0px 10px 10px 0px;
+		margin-bottom: 2rem;
+	}
 }
 
 /*Horarios*/
@@ -272,8 +399,21 @@ h5{
 	justify-content: space-between;
 	background: black;
 	background-size: cover;
-	width: 60%;
-	height: 80%;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+	.horarios{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: black;
+		background-size: cover;
+		width: 70%;
+		height: 80%;
+	}
 }
 
 .mapa{
@@ -281,7 +421,17 @@ h5{
 	height:40%;
 	border: 10px solid black;
 	display: flex;
-	align-self: flex-start;
+	align-self: center;
+}
+
+@media (min-width:768px) {
+	.mapa{
+		width:100%;
+		height:40%;
+		border: 10px solid black;
+		display: flex;
+		align-self: flex-start;
+	}
 }
 
 .maps{
@@ -303,6 +453,7 @@ h5{
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 3rem;
+	padding-bottom: 0;
 }
 
 .dato{
@@ -310,18 +461,17 @@ h5{
 	text-align: center;
 	align-items: center;
 	align-content: center;
+	margin-bottom: 2rem;
 }
 
 .dato h6{
 	margin-left: 2rem;
-	font-size: 1.8rem;
 	margin-bottom: 0;
 	color: white;
 }
 
 .dato h5{
 	margin-left: 2rem;
-	font-size: 1.5rem;
 	margin-bottom: 0;
 	color: white;
 }
@@ -388,13 +538,16 @@ select{
 
 /*Form de mail para suscribirse*/
 h5{
-	font-size: 1.8rem;
 	text-align: center;
 }
 
 .proximamente{
-	padding-bottom: 9rem;
-	font-size: 2.2rem;
+	padding-bottom: 2rem;
+}
+@media (min-width:768px) {
+	.proximamente{
+		padding-bottom: 9rem;
+	}
 }
 
 label{
@@ -417,7 +570,7 @@ select{
 .mail .suscribe{
 	display: flex;
 	align-items: center;
-	padding: 4rem;
+	padding: 2rem;
 }
 
 .input:hover{
@@ -427,4 +580,14 @@ select{
 fieldset{
 	display: flex;
 	flex-direction: column;
+}
+
+.footer{
+
+}
+
+@media (min-width:768px) {
+	.footer{
+
+	}
 }
