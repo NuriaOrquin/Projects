@@ -608,7 +608,13 @@ fieldset{
 	weight: 100%;
 }
 
-.navegacion2 a, p{
+.navegacion2 a{
+color: #ffffff;
+text-decoration: none;
+font-size: 1.3rem;
+}
+
+.navegacion2 p{
 color: #ffffff;
 text-decoration: none;
 font-size: 1.3rem;
